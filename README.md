@@ -7,6 +7,7 @@ Run `npm i` for installation the npm package
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+If you got the error "Control-Allow-Origin' header is present on the requested resource" please add the disable sercurity for the bypass "Control-Allow-Origin" of the browser.
 
 ## Code scaffolding
 
