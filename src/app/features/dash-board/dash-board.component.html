@@ -1,0 +1,16 @@
+<div class="tweet-container">
+  <div class="tweet-text">
+    <span>Angular Twitter</span>
+  </div>
+  <div class="tweet-content-tabs">
+    <nav mat-tab-nav-bar [backgroundColor]="primary">
+      <a mat-tab-link *ngFor="let link of links"
+         (click)="getCurrentTab(link)"
+         [active]="activeLink == link" > {{link}} </a>
+    </nav>
+  </div>
+  <div class="tweet-content-table">
+    <app-content-tweet [isHashtagsTab]="isHashtagsTab"></app-content-tweet>
+  </div>
+</div>
+

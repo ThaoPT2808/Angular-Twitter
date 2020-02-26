@@ -1,0 +1,9 @@
+<div fxLayout="column">
+  <span class="search-lable">{{titleSearchInput}}</span>
+  <mat-form-field appearance="outline" floatLabel="always">
+    <div fxLayout="row">
+      <input matInput placeholder="{{placeholderInput}}" [formControl]="searchField">
+      <mat-icon svgIcon="search" aria-hidden="false" (click)="onClickSearching()"></mat-icon>
+    </div>
+  </mat-form-field>
+</div>
